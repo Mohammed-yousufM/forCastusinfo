@@ -73,10 +73,13 @@ export class SecondPage extends Component {
         tot_hours: "12",
       },
     ];
-    this.state = {};
+    this.state = {
+      color: "",
+    };
   }
 
   render() {
+    let color = "blue";
     return (
       <div>
         <div style={styles.one}>
@@ -130,8 +133,23 @@ export class SecondPage extends Component {
             <span>Total Hours</span>
           </div>
           {this.infoWeek.map((val) => {
+            if (val.day === "Saturday" || val.day === "Sunday") {
+              color = "#CACFD2";
+            } else {
+              color = "white";
+            }
             return (
-              <div className="ui segment" key={val.id} style={styles.twelve}>
+              <div
+                className="ui segment"
+                key={val.id}
+                style={{
+                  display: "grid",
+                  justifyContent: "center",
+                  alignContent: "center",
+                  gridTemplateColumns: "1fr 1fr 1fr 2fr 1fr",
+                  backgroundColor: `${color}`,
+                }}
+              >
                 <div style={{ display: "flex", flexDirection: "column" }}>
                   <span>{val.day}</span>
                   <span>{val.date}</span>

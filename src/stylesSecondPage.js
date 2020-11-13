@@ -74,6 +74,7 @@ const styles = {
     display: "grid",
     textAlign: "center",
     gridTemplateColumns: "1fr 1fr 1fr 2fr 1fr",
+    backgroundColor: "#808B96",
   },
   twelve: {
     display: "grid",
