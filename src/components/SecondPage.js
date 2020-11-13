@@ -166,9 +166,21 @@ export class SecondPage extends Component {
             className="ui segment"
             style={{ display: "flex", justifyContent: "space-evenly" }}
           >
-            <img src={i2} alt="attachment" />
-            <img src={i2} alt="attachment" />
-            <img src={i2} alt="attachment" />
+            <img
+              src={i2}
+              alt="attachment"
+              style={{ borderWidth: "1px", borderStyle: "solid" }}
+            />
+            <img
+              src={i2}
+              alt="attachment"
+              style={{ borderWidth: "1px", borderStyle: "solid" }}
+            />
+            <img
+              src={i2}
+              alt="attachment"
+              style={{ borderWidth: "1px", borderStyle: "solid" }}
+            />
           </div>
           <div>
             <label>Add Comments</label>
